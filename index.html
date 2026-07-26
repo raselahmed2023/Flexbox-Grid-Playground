@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pricing Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="p-4 font-sans">
+
+    <h2 class="text-xl font-bold mb-2">Flexbox Version</h2>
+    <header class="bg-gray-800 text-white text-center p-4">Pricing Header</header>
+    <div class="flex flex-col min-[600px]:flex-row gap-4 my-4">
+        <div class="flex-1 border p-4">
+            <h3 class="font-bold">Basic</h3>
+            <p class="text-xl">$9/mo</p>
+            <ul class="text-sm mt-2">
+                <li>1 project</li>
+                <li>Community support</li>
+                <li>1 GB storage</li>
+            </ul>
+        </div>
+        <div class="flex-1 border p-4">
+            <h3 class="font-bold">Pro</h3>
+            <p class="text-xl">$25/mo</p>
+            <ul class="text-sm mt-2">
+                <li>Unlimited projects</li>
+                <li>Priority support</li>
+                <li>50 GB storage</li>
+            </ul>
+        </div>
+        <div class="flex-1 border p-4">
+            <h3 class="font-bold">Enterprise</h3>
+            <p class="text-xl">$60/mo</p>
+            <ul class="text-sm mt-2">
+                <li>Team seats</li>
+                <li>Dedicated support</li>
+                <li>500 GB storage</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-white text-center p-4">Pricing Footer</footer>
+
+    <h2 class="text-xl font-bold mt-8 mb-2">Grid Version</h2>
+    <header class="bg-gray-800 text-white text-center p-4">Pricing Header</header>
+    <div class="grid grid-cols-1 min-[600px]:grid-cols-3 gap-4 my-4">
+        <div class="border p-4">
+            <h3 class="font-bold">Basic</h3>
+            <p class="text-xl">$9/mo</p>
+            <ul class="text-sm mt-2">
+                <li>1 project</li>
+                <li>Community support</li>
+                <li>1 GB storage</li>
+            </ul>
+        </div>
+        <div class="border p-4">
+            <h3 class="font-bold">Pro</h3>
+            <p class="text-xl">$25/mo</p>
+            <ul class="text-sm mt-2">
+                <li>Unlimited projects</li>
+                <li>Priority support</li>
+                <li>50 GB storage</li>
+            </ul>
+        </div>
+        <div class="border p-4">
+            <h3 class="font-bold">Enterprise</h3>
+            <p class="text-xl">$60/mo</p>
+            <ul class="text-sm mt-2">
+                <li>Team seats</li>
+                <li>Dedicated support</li>
+                <li>500 GB storage</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-white text-center p-4">Pricing Footer</footer>
+
 </body>
+
 </html>
